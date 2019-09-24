@@ -10,6 +10,7 @@
             background: $homeImage;
             background-attachment: fixed;
             background-size: cover;
+            background-repeat: no-repeat;
 
             &:after {
                 content: '';
@@ -23,5 +24,35 @@
             }
         }
 
+    }
+}
+
+@mixin media-xs {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1171) {
+        @content;
     }
 }

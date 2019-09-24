@@ -79,7 +79,7 @@
             transform: translate3d(0, 0, 0);
         }
         .portrait {
-            background-size: contain;
+            background-size: cover;
             width: 250px;
             height: 250px;
             background: url('../img/portrait2.jpg');
