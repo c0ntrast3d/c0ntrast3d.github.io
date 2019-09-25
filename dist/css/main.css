@@ -135,6 +135,13 @@
       background-size: contain;
       background-repeat: no-repeat; } }
 
+@font-face {
+  font-family: 'Big Shoulders Display';
+  src: local("Big Shoulders Display"), url("../fonts/bigshoulderstext-regular-webfont.woff") format("woff2"), url("../fonts/bigshoulderstext-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+000-5FF; }
+
 * {
   box-sizing: border-box; }
 
