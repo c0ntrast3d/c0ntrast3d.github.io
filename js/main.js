@@ -17,5 +17,10 @@ const toggleMenu = () => {
     showMenu = !showMenu;
 };
 
-menuBtn.addEventListener('click', toggleMenu);
+window.addEventListener(
+    'DOMContentLoaded', (event) => {
+        console.log('loaded')
+        menuBtn.addEventListener('click', toggleMenu);
 
+    }
+);

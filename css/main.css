@@ -135,6 +135,12 @@
       background-size: contain;
       background-repeat: no-repeat; } }
 
+@font-face {
+  font-family: 'big_shoulders_textregular';
+  src: url("bigshoulderstext-regular-webfont.woff2") format("woff2"), url("bigshoulderstext-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 * {
   box-sizing: border-box; }
 
@@ -144,13 +150,12 @@ body {
   height: 100%;
   margin: 0;
   /* Fonts */
-  font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Big Shoulders Display', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url("../img/background3.jpg");
+    background: linear-gradient(45deg, #ffbd37 0%, #207cca 49%, #222D32 100%);
     background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-size: cover; }
     body#bg-img:after {
       content: '';
       position: absolute;
@@ -187,15 +192,24 @@ header {
   color: #FFC550; }
 
 main {
-  padding: 4rem;
+  padding: 4rem 4rem 0 4rem;
   height: 100%; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
-      main .icons a:hover {
-        color: #eece1a;
-        transition: all 0.6s ease-out; }
+      main .icons a:hover .fa-vk {
+        color: #45668e;
+        transition: all 0.6s ease-in; }
+      main .icons a:hover .fa-facebook {
+        color: #3b5998;
+        transition: all 0.6s ease-in; }
+      main .icons a:hover .fa-linkedin {
+        color: #0077b5;
+        transition: all 0.6s ease-in; }
+      main .icons a:hover .fa-github {
+        color: #6e5494;
+        transition: all 0.6s ease-in; }
   main#home {
     overflow: hidden; }
     main#home h1 {
