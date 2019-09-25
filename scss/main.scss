@@ -14,9 +14,7 @@ body {
     height: 100%;
     margin: 0;
     /* Fonts */
-    //font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
-    //font-family: 'Open Sans', sans-serif;
+    font-family: 'Big Shoulders Display', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
 }
 
@@ -53,7 +51,7 @@ header {
 }
 
 main {
-    padding: 4rem;
+    padding: 4rem 4rem 0 4rem;
     height: 100%;
 
     .icons {
@@ -63,8 +61,12 @@ main {
             padding: 0.4rem;
 
             &:hover {
-                color: $iconHoverColor;
-                @include ease-out();
+                @include social-icon-color('fa-',
+                    'vk' $vkIconColor,
+                    'facebook' $fbIconColor,
+                    'linkedin' $linkedinIconColor,
+                    'github' $githubIconColor
+                );
             }
         }
     }

@@ -2,13 +2,16 @@
   "name": "tm-portfolio",
   "version": "1.0.0",
   "description": "Responsive portfolio",
+  "homepage": "https://c0ntrast3d.github.io/personal_page",
   "main": "index.js",
   "scripts": {
-    "saas": "node-sass -w scss/ -o dist/css/ --recursive"
+    "saas": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0"
   }
 }

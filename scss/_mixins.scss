@@ -4,13 +4,25 @@
     transition: all 0.6s ease-out;
 }
 
+@mixin ease-in {
+    transition: all 0.6s ease-in;
+}
+
+@mixin social-icon-color($prefix, $colors...) {
+    @each $i in $colors {
+        .#{$prefix}#{nth($i, 1)} {
+            color: nth($i, 2);
+            @include ease-in;
+        }
+    }
+}
+
 @mixin backround {
     @if $showHomeImage {
         &#bg-img {
-            background: $homeImage;
+            background: linear-gradient(45deg, darken(#FFC550, 5) 0%,#207cca 49%,#222D32 100%);;
             background-attachment: fixed;
             background-size: cover;
-            background-repeat: no-repeat;
 
             &:after {
                 content: '';
